@@ -9,11 +9,11 @@ display: flex;
     flex-direction: column;
 }
 
-.defaultBtn(){
+.defaultBtn(@btnBg, @btnFont){
 
     background-color: @btnBg;
     color: @btnFont;
-    border: none;
+    border: solid 1px;
     border-radius: 5px;
     width: 20%;
     height: 3vh;
@@ -24,4 +24,11 @@ display: flex;
         background-color: @btnFont;
         color: @btnBg;
     }
+}
+
+.fadeAnimation(){
+animation-name: fade;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
 }
