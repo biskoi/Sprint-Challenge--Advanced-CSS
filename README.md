@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    A fully responsive website would have a fluid design, so that everything on the page will adjust itself according to the screen size, using one layout. An adaptive website would have more than 1 layout, each designed for a particular screensize, such as with breakpoints.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+    To be desktop first means that you first build the desktop layout of the website, and then going back with a media query to make it fit on the screen for a mobile device. To be mobile first is just the reverse of this.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    This resets the HTML fontsize so that 1 rem is equal to 10 pixels.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+    Preprocessing is basically CSS, but you are able to use variables, and nest your CSS tags within one another, unlike in vanilla CSS. It's just CSS, but powerful. You also write in .less instead of .CSS, and the compiler will then turn it into CSS so that your browser can read it.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    My favourite concepts in preprocessing are parametric mixins, because it allows you to skip writing the same code over and over again. The only concept that I struggle to find use for outside of media queries is the escape function.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -94,29 +104,29 @@ _You will know everything is working properly when you see the styles enabled fo
 
 ### Home Page - Desktop HTML & LESS
 
-* [ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
+* [ok] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
 
-* [ ] Add a viewport meta tag to the head of your index.html page
+* [ok] Add a viewport meta tag to the head of your index.html page
 
-* [ ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
+* [ok] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
 
-* [ ] Navigation Styles: Use the `navigation.less` file for styling.
+* [ok] Navigation Styles: Use the `navigation.less` file for styling.
 
-* [ ] Main Content Styles: Use the `home-page.less` file for styling
+* [ok] Main Content Styles: Use the `home-page.less` file for styling
 
-* [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
+* [ok] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
 
-* [ ] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
+* [ok] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
 
-* [ ]  Use at least 2 parameters to create your button
+* [ok]  Use at least 2 parameters to create your button
 
-* [ ] Create a hover state that swaps the background color and font color of the base button styles.
+* [ok] Create a hover state that swaps the background color and font color of the base button styles.
 
 ### Mobile Design
 
-* [ ] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
+* [ok] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
 
-* [ ] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
+* [ok] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
 
 * [ ] Push your changes and create a pull request if you haven't already.
 
@@ -128,7 +138,7 @@ After finishing your required elements, you can push your work further. These go
 
 * [ ] Build a page of your choosing from the navigation items. Come up with content and images that fit the theme.
 
-* [ ] Introduce CSS animations to your site.
+* [ok] Introduce CSS animations to your site.
 
 * [ ] Create a fixed navigation and add some opacity to the background
 

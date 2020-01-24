@@ -1,1 +1,34 @@
 // Mixins Here
+
+.flexRow(){
+display: flex;
+}
+
+.flexColumn(){
+    display: flex;
+    flex-direction: column;
+}
+
+.defaultBtn(@btnBg, @btnFont){
+
+    background-color: @btnBg;
+    color: @btnFont;
+    border: solid 1px;
+    border-radius: 5px;
+    width: 20%;
+    height: 3vh;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+
+    &:hover{
+        background-color: @btnFont;
+        color: @btnBg;
+    }
+}
+
+.fadeAnimation(){
+animation-name: fade;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
